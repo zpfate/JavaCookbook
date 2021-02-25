@@ -2,18 +2,6 @@ package com.Example;
 
 import java.util.Arrays;
 
-class Teacher {
-
-    public String name;
-    public int age;
-
-    public Teacher(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-}
-
 
 public class Main {
 
@@ -49,6 +37,9 @@ public class Main {
 
         ///
 
+        Outer outer = new Outer("Nested"); // 实例化一个Outer
+        Outer.Inner inner = outer.new Inner(); // 实例化一个Inner
+        inner.hello();
 
 
     }

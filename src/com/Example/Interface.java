@@ -8,6 +8,18 @@ interface Person {
     String getName();
 }
 
+class Teacher {
+
+    public String name;
+    public int age;
+
+    public Teacher(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+}
+
 class Student implements Person {
     private String name;
 
@@ -24,3 +36,4 @@ class Student implements Person {
 
 
 }
+
